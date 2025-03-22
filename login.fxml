@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="406.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject12.LoginController">
+
+    <!-- Root container -->
+    <children>
+        <!-- VBox for central alignment -->
+        <VBox alignment="CENTER" layoutY="-7.0" prefHeight="457.0" prefWidth="700.0" spacing="20" style="-fx-background-color: #f4f4f9; -fx-padding: 20;">
+
+            <!-- Heading -->
+            <Label style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #4CAF50;" text="Welcome to IPL Database" />
+
+            <!-- Subheading -->
+            <Label style="-fx-font-size: 18px; -fx-text-fill: #7B7B7B;" text="Please login to continue" />
+
+            <!-- Club Manager Login Fields -->
+            <HBox alignment="CENTER" spacing="15" style="-fx-padding: 5;">
+                <Label style="-fx-font-size: 14px;" text="Club Name:" />
+                <TextField fx:id="clubNameTextField" promptText="Enter club name" style="-fx-pref-width: 250px; -fx-border-radius: 5px;" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="15" style="-fx-padding: 5;">
+                <Label style="-fx-font-size: 14px;" text="Password:" />
+                <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-pref-width: 250px; -fx-border-radius: 5px;" />
+            </HBox>
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+                <Button fx:id="visitorButton" onAction="#visitorLoginAction" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-border-radius: 5px; -fx-font-size: 14px; -fx-pref-width: 150px;" text="Login as Visitor" />
+                <Button fx:id="clubManagerButton" onAction="#clubManagerLoginAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-border-radius: 5px; -fx-font-size: 14px; -fx-pref-width: 150px;" text="Login as Club Manager" />
+            </HBox>
+
+        </VBox>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>

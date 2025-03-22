@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="709.0" prefWidth="635.0" style="-fx-background-color: #e8f4f8; -fx-padding: 20;" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject12.ClubManagerDashboardController">
+    <!-- Left VBox for buttons -->
+    <VBox alignment="TOP_CENTER" prefHeight="669.0" prefWidth="318.0" spacing="15" style="-fx-background-color: #d9edf7; -fx-border-radius: 10; -fx-padding: 20; -fx-border-color: #b6d4e3;">
+        <!-- Title or Header -->
+        <Label fx:id="clubNameLabel" alignment="CENTER" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2b6777;" text="Club Manager Dashboard" wrapText="true" />
+        <Button fx:id="buyPlayerButton" onAction="#handleShowMarketPlace" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #38a1db; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Market Place" />
+        <Button fx:id="sellPlayerButton" onAction="#handleSellPlayerAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #38a1db; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Sell Player" />
+        <Button fx:id="playerSelectionButton" onAction="#handlePlayerSelection" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: #2b86c5; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Select Player" />
+
+        <!-- Spacer to push buttons to the bottom -->
+        <Region VBox.vgrow="ALWAYS" />
+
+        <!-- Bottom Buttons (Refresh and Logout) -->
+        <Button fx:id="RefreshClubDashboard" onAction="#handleClubDashboard" prefHeight="44.0" prefWidth="140.0" style="-fx-background-color: #2b86c5; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Refresh Dashboard" />
+        <Button fx:id="logoutButton" alignment="CENTER" onAction="#handleLogoutAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #d9534f; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Logout" />
+    </VBox>
+
+    <!-- ListView to display players -->
+    <ListView fx:id="playerListView" prefHeight="669.0" prefWidth="521.0" style="-fx-background-color: #ffffff; -fx-border-color: #c7d3dc; -fx-border-radius: 5; -fx-padding: 5;" />
+</HBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21.0.1" fx:controller="com.example.finalproject12.SearchPlayersController" spacing="15" padding="20">
+    <!-- Country-wise Player Count -->
+    <HBox spacing="10" alignment="center">
+        <Button onAction="#countryWisePlayerCount" text="Get Count" style="-fx-font-size: 14px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10px;"/>
+    </HBox>
+
+    <!-- Back Button -->
+    <HBox alignment="center" spacing="10" padding="20">
+        <Button onAction="#backToHome" text="Back to Home" style="-fx-font-size: 14px; -fx-background-color: #9C27B0; -fx-text-fill: white; -fx-padding: 10px;"/>
+    </HBox>
+</VBox>

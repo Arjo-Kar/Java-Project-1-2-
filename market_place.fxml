@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="616.0" prefWidth="641.0" spacing="15" style="-fx-background-color: #f4f4f9; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject12.MarketPlaceController">
+
+    <!-- Title -->
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Market Place" />
+
+    <!-- Player List -->
+    <ListView fx:id="playerListView" accessibleRole="COMBO_BOX" prefHeight="388.0" prefWidth="601.0" style="-fx-background-color: #ffffff; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;" />
+
+    <!-- Selected Player Details -->
+    <VBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="595.0" spacing="5" style="-fx-padding: 10; -fx-background-color: #ffffff; -fx-border-color: #ddd; -fx-border-radius: 5;">
+        <Label fx:id="playerNameLabel" style="-fx-font-size: 16px; -fx-text-fill: #555;" text="Player: -" />
+        <Label fx:id="currentClubLabel" style="-fx-font-size: 16px; -fx-text-fill: #555;" text="Current Club: ">
+            <font>
+                <Font name="Times New Roman Bold" size="16.0" />
+            </font></Label>
+    </VBox>
+
+
+    <!-- Buttons -->
+    <HBox alignment="CENTER" spacing="20" style="-fx-padding: 10;">
+        <Button fx:id="RefreshMarketPlace" onAction="#handleRefresh" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5; -fx-padding: 10;" text="Refresh">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="13.0" />
+            </font></Button>
+        <Button fx:id="buyPlayerButton" disable="true" onAction="#handleBuyPlayerAction" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5; -fx-padding: 10;" text="Buy Player">
+            <font>
+                <Font name="Times New Roman Bold" size="14.0" />
+            </font></Button>
+    </HBox>
+
+</VBox>

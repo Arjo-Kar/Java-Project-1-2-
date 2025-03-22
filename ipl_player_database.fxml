@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="577.0" prefWidth="574.0" spacing="15" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject12.HomeController" style="-fx-background-color: linear-gradient(to bottom, #74b9ff, #0984e3); -fx-padding: 20;">
+    <!-- Title Label -->
+    <Label style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: white;" text="IPL Player Database" />
+
+    <!-- Search Players Button -->
+    <Button onAction="#navigateToSearchPlayers" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #81ecec; -fx-text-fill: #2d3436; -fx-font-size: 18px; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-weight: bold;">
+        &#128269; Search Players
+    </Button>
+
+    <!-- Search Clubs Button -->
+    <Button onAction="#navigateToSearchClubs" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #55efc4; -fx-text-fill: #2d3436; -fx-font-size: 18px; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-weight: bold;">
+        &#127984; Search Clubs
+    </Button>
+
+    <!-- Add Player Button -->
+    <Button onAction="#navigateToAddPlayer" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #fab1a0; -fx-text-fill: #2d3436; -fx-font-size: 18px; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-weight: bold;">
+        &#10133; Add Player
+    </Button>
+
+    <!-- Exit System Button -->
+    <Button onAction="#BackToMain" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d63031; -fx-text-fill: white; -fx-font-size: 18px; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-weight: bold;">
+        &#10060; Back to Login
+    </Button>
+</VBox>
